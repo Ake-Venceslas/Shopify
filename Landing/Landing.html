@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        tailwind.config ={
+            theme: {
+                extend: {
+                    colors: {
+                        customBlue: '#1E40AF',
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        @keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+.bounce-in {
+    display: inline-block;
+    animation: bounceIn 1s forwards;
+  }
+
+  .bounce {
+    display: inline-block;
+    animation: bounce 0.5s infinite;
+  }
+
+  @keyframes bounceIn {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    30% {
+      transform: translateX(-20%);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(10%);
+    }
+    70% {
+      transform: translateX(-5%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Shopify Landing Page</title>
+
+    <title>Document</title>
+</head>
+
+<body class="h-screen bg-gradient-to-b from-blue-100 to-green transition-all duration-700 ease-in-out animate-slide-in-left">
+  
+    <div class="flex space-x-4 mt-6">
+        <a href="#" class="inline-block bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300">
+            Log In
+        </a>
+        <a href="/Login/Sign Up.html" class="inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-500 transition duration-300">
+            Sign Up
+        </a>
+    </div>
+
+    <div class="flex justify-center mb-6">
+        <img src="/Login/logo.png" alt="Shopify Logo" class="h-12">
+      </div>
+
+    <main class="flex flex-col items-center justify-center text-center">
+        <h1 class="text-2xl font-bold mb-6">Bring your ideas to life for $1/month</h1>
+        <p class="mb-6 text-lg">The future of business is yours to shape. Sign up for a free trial and enjoy 3 months of Shopify for $1/month on select plans.</p>
+
+        <div class="relative">
+            <input type="email" placeholder="Enter your email address" class="border border-grey-300 py-2 px-4 w-80 rounded-full pr-24" />
+            <button class="absolute right-0.5 top-1/2 transform -translate-y-1/2 bg-black rounded-full py-2 px-2 hover:bg-gray-700 text-white">Start free trial</button>
+        </div>                
+        
+        <div class="mt-6 text-gray-600 text-sm">
+            <p>Try Shopify free for 3 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</p>
+        </div>
+
+        <div><img src="/Landing/téléchargement (1).png" alt="" class="bounce-in bounce"> </div>
+    </main>
+
+    <div class="container mx-auto px-4 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="p-4">
+                <div class="mb-4 flex flex-col items-center">
+                <img src="/Landing/Templates.png" alt="">
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Customizable templates</h3>
+                <p class="text-gray-600">Free website designs to launch your store quickly and easily.</p>
+            </div>
+            <div class="p-4">
+                <div class="mb-4 flex flex-col items-center">
+                <img src="/Landing/All.png" alt="">
+                </div>
+                <h3 class="text-lg font-semibold mb-2">All in one</h3>
+                <p class="text-gray-600">Shopify takes care of everything from marketing and payments to secure transactions and shipping.</p>
+            </div>
+            <div class="p-4">
+                <div class="mb-4 flex flex-col items-center">
+                <img src="/Landing/safe.png" alt="">
+                </div>
+                <h3 class="text-lg font-semibold mb-2">A safe and efficient platform</h3>
+                <p class="text-gray-600">Millions of users trust Shopify to manage their online stores.</p>
+            </div>
+        </div>
+    
+        <div class="flex flex-wrap justify-center mt-10">
+            <img src="/Landing/allbirds.png" alt="allbirds" class="mx-3">
+            <img src="/Landing/GymShark.png" alt="GYMSHARK" class="mx-3">
+            <img src="/Landing/Brooklinen.png" alt="brooklinen" class="mx-3">
+            <img src="/Landing/Lessa.png" alt="Leesa" class="mx-3">
+            <img src="/Landing/Kylie.png" alt="KYLIE" class="mx-3">
+            <img src="/Landing/Crate.png" alt="Crate&Barrel" class="mx-3">
+            <img src="/Landing/Untuck.png" alt="UNTUCKit" class="mx-3">
+            <img src="/Landing/Death.png" alt="Death" class="mx-3">
+            <img src="/Landing/Jungalow.png" alt="JUNGALOW" class="mx-3">
+            <img src="/Landing/Rebecca.png" alt="Rebecca Minkoff" class="mx-3">
+        </div>
+    </div>
+    
+    <div class="bg-white p-6 rounded-lg shadow-md ">
+        <blockquote class="text-gray-800 text-3xl flex justify-center g-gradient-to-r from-[#F1FFF9] to-[#F1FFF9]">
+          "Shopify is better than any other
+        </blockquote>
+
+        <blockquote class="text-gray-800 text-3xl flex justify-center">
+          platform we've played with, and we've played with them all."
+        </blockquote>
+
+        <p class="mt-4 text-gray-600 text-xl flex justify-center">
+          Jonathon Bayme, CEO of Theory11
+        </p>
+      </div>
+
+      <div class="bg-gradient-to-r from-[black] to-[#F1FFF9] py-16 px-5 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl text-white">
+            Build your dream business for $1/month
+          </h1>
+          <p class="mt-4 text-grey-500 text-[#82A5A4] text-2xl">
+            Start your free trial and enjoy 3 months of Shopify for $1/month on select plans.
+          </p>
+          <div class="mt-8 flex justify-center space-x-4">
+            <div class="relative">
+                <input type="email" placeholder="Enter your email address" class="border border-gray-300 py-2 px-4 w-80 rounded-full pr-24" />
+                <button class="absolute right-0.5 top-1/2 transform -translate-y-1/2 bg-black rounded-full py-2 px-2 hover:bg-gray-700 text-white">Start free trial</button>
+            </div>   
+        </div>
+        
+          <p class="mt-4 text-sm text-grey-500 text-white">
+            Try Shopify free for 3 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-2xl mx-auto">
+        <h1 class="text-3xl mb-6">FAQ</h1>
+        <div class="space-y-4">
+            <div class="flex justify-between items-center p-4 text-xl">
+                <span><a href="#">What is Shopify and how does it work?</a></span>
+                <a href="#"><img src="/Landing/add_circle.png" class="mx-3 h-6"></a>
+            </div>
+            <div class="flex justify-between items-center p-4 text-xl">
+                <span><a href="#">How much does Shopify cost?</a></span>
+                <a href="#"><img src="/Landing/add_circle.png" class="mx-3 h-6"></a>
+            </div>
+            <div class="flex justify-between items-center p-4 text-xl">
+                <span><a href="#">I use my own domain name with Shopify?</a></span>
+                <a href="#"><img src="/Landing/add_circle.png" class="mx-3 h-6"></a>
+            </div>
+            <div class="flex justify-between items-center p-4 text-xl">
+                <span><a href="#">I need to be a designer or developer to use Shopify?</a></span>
+                <a href="#"><img src="/Landing/add_circle.png" class="mx-3 h-6"></a>
+            </div>
+        </div>
+
+        <div class="mt-6 text-right p-6 space-x-4 text-3xl">
+            <a href="https://www.shopify.com/legal/terms" class="text-sm text-grey-500 hover:underline">Terms of Service</a>
+            <a href="https://www.shopify.com/legal/privacy" class="text-sm text-grey-500 hover:underline">Privacy Policy</a>
+            <a href="https://www.shopify.com/sitemap" class="text-sm text-grey-500 hover:underline">Sitemap</a>
+        </div>
+
+    </div>
+
+    <script src="/Landing/script.js"></script>
+</body>
+</body>
+</html>
